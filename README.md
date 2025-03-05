@@ -24,30 +24,18 @@ A running instance of MongoDB (either locally or on MongoDB Atlas)
 
 Setup Instructions
 Clone the repository:
-sh
-Copy
-Edit
 git clone https://github.com/DhanushDhanush2001/User-Authentication-System.git  
 cd User-Authentication-System
 
 Install dependencies:
-sh
-Copy
-Edit
 npm install
 
 Create a .env file in the root directory and add:
-ini
-Copy
-Edit
 PORT=5000  
 MONGO_URI=your_mongodb_connection_string  
 JWT_SECRET=your_jwt_secret  
 
 Start the server:
-sh
-Copy
-Edit
 npm start
 
 Postman Collection
