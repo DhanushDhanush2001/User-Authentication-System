@@ -33,7 +33,14 @@ npm install
 Create a .env file in the root directory and add:
 PORT=5000  
 MONGO_URI=your_mongodb_connection_string  
-JWT_SECRET=your_jwt_secret  
+JWT_SECRET=your_jwt_secret
+SMTP_HOST = 
+SMTP_PORT = 
+SMTP_USER = 
+SMTP_PASS = 
+SMTP_NAME = 
+SMTP_FROM_EMAIL = 
+use mailtrap.io for forgot password mail sending.
 
 Start the server:
 npm start
