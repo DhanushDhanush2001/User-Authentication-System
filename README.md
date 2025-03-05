@@ -1,58 +1,57 @@
 User Authentication System
+
 Overview
-A minimal and secure user authentication system built with Node.js, Express.js, and MongoDB. It supports user registration, login, authentication, and  using JWT-based authentication.
+This is a secure and minimal user authentication system built using Node.js, Express.js, and MongoDB. It enables users to register, log in, and manage sessions securely with JWT authentication.
 
 Features
-* User Registration & Login with JWT
-* Password Hashing using bcrypt
-*  Logout Functionality
-*  MongoDB Integration
+✅ User Registration – Create an account securely
+✅ User Login – Authenticate users with JWT tokens
+✅ Password Hashing – Ensures password security with bcrypt
+✅ Logout Functionality – Manage user sessions effectively
+✅ MongoDB Integration – Store and manage user data seamlessly
 
 Tech Stack
 Backend: Node.js, Express.js
 Database: MongoDB (Mongoose)
 Authentication: JWT (JSON Web Token), bcrypt
-Installation & Setup
+
+Getting Started
 Prerequisites
-* Node.js installed
-* MongoDB (Local or Atlas)
+Before you begin, make sure you have:
 
-Steps to Run the Project
+Node.js installed
+A running instance of MongoDB (either locally or on MongoDB Atlas)
+
+Setup Instructions
 Clone the repository:
-
 sh
 Copy
 Edit
-git clone https://github.com/DhanushDhanush2001/User-Authentication-System.git
+git clone https://github.com/DhanushDhanush2001/User-Authentication-System.git  
 cd User-Authentication-System
-Install dependencies:
 
+Install dependencies:
 sh
 Copy
 Edit
 npm install
-Create a .env file in the root directory and add:
 
-env
+Create a .env file in the root directory and add:
+ini
 Copy
 Edit
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-Start the server:
+PORT=5000  
+MONGO_URI=your_mongodb_connection_string  
+JWT_SECRET=your_jwt_secret  
 
+Start the server:
 sh
 Copy
 Edit
 npm start
-API Endpoints
-Method	Endpoint	Description
-POST	/api/register	Register a new user
-POST	/api/login	User login & get JWT token
-GET	/api/protected	Access protected data
-POST	/api/logout	Logout user
+
 Postman Collection
-To test the API endpoints using Postman, click the button below:
+To test the authentication system, use this Postman Collection:
 🔗 Postman Collection
 https://public-api-3199.postman.co/workspace/Public-WorkPlace~8db02e2e-2bb8-4e38-8b12-86ece3af84ba/collection/33341630-bfa021ee-fa09-4213-8a71-bc8724534eca?action=share&creator=33341630
 
@@ -60,4 +59,6 @@ License
 This project is open-source and licensed under the MIT License.
 
 Author
-👤 Dhanush Dhanush
+👨‍💻 Dhanush Dhanush
+If you have any questions or feedback, feel free to reach out!
+
