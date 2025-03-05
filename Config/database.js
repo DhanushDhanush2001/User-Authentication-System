@@ -2,13 +2,7 @@ const mongoose = require('mongoose')
 
 const connectDatabase = async () =>{
     try{
-     await mongoose.connect(process.env.DB_LOCAL_URI,{
-         useNewUrlParser: true,
-            useUnifiedTopology: true,
-            tls: true,  // Ensure TLS is enabled
-            serverSelectionTimeoutMS: 5000,  // Timeout after 5s if no response
-            socketTimeoutMS: 45000,
-   });
+     await mongoose.connect(process.env.DB_LOCAL_URI)
         console.log(`mongoDb is connect to the host : ${mongoose.connection.host}`)
     } catch(error){
           console.log("DataBase Connection error", error);
