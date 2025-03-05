@@ -3,11 +3,11 @@ Overview
 A minimal and secure user authentication system built with Node.js, Express.js, and MongoDB. It supports user registration, login, authentication, and protected routes using JWT-based authentication.
 
 Features
-✔️ User Registration & Login with JWT
-✔️ Password Hashing using bcrypt
-✔️ Protected Routes (Authorization)
-✔️ Logout Functionality
-✔️ MongoDB Integration
+* User Registration & Login with JWT
+* Password Hashing using bcrypt
+*  Protected Routes (Authorization)
+*  Logout Functionality
+*  MongoDB Integration
 
 Tech Stack
 Backend: Node.js, Express.js
@@ -15,8 +15,8 @@ Database: MongoDB (Mongoose)
 Authentication: JWT (JSON Web Token), bcrypt
 Installation & Setup
 Prerequisites
-✅ Node.js installed
-✅ MongoDB (Local or Atlas)
+* Node.js installed
+* MongoDB (Local or Atlas)
 
 Steps to Run the Project
 Clone the repository:
@@ -55,7 +55,7 @@ POST	/api/logout	Logout user
 Postman Collection
 To test the API endpoints using Postman, click the button below:
 🔗 Postman Collection
-(https://www.postman.com/dhanushpandian/workspace/my-workspace/collection/33341630-ac109062-d3c3-46ec-9a48-bfe05108d498?action=share&creator=33341630)
+https://public-api-3199.postman.co/workspace/Public-WorkPlace~8db02e2e-2bb8-4e38-8b12-86ece3af84ba/collection/33341630-bfa021ee-fa09-4213-8a71-bc8724534eca?action=share&creator=33341630
 
 License
 This project is open-source and licensed under the MIT License.
