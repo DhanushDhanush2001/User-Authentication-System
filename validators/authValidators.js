@@ -1,7 +1,7 @@
 const { body } = require("express-validator");
 
 const registerValidation = [
-    body("userName")
+    body("username")
         .trim()
         .notEmpty()
         .withMessage("Username is required")
@@ -27,15 +27,14 @@ const registerValidation = [
         ),
 
     body("gender")
-        .optional()
+        .default("")
+         .customSanitizer((value) => (Array.isArray(value) ? value[0] : value))
         .isString()
         .withMessage("Gender should be a string")
         .isIn(["Male", "Female", "Other"])
         .withMessage("Gender value is invalid"),
 
     body("phone")
-        .trim()
-        .notEmpty()
         .withMessage("Phone number is required")
         .custom((value) => {
             const regex = /^[6-9]\d{9}$/;
