@@ -91,8 +91,7 @@ Postman Collection
 ## Postman Collection
 To test the API endpoints using **Postman**, click the button below:
 
-(https://run.pstmn.io/button.svg)][(https://www.postman.com/dhanushpandian/workspace/my-workspace/collection/33341630-ac109062-d3c3-46ec-9a48-bfe05108d498?action=share&creator=33341630)
-](https://api.postman.com/collections/33341630-bfa021ee-fa09-4213-8a71-bc8724534eca?access_key=PMAT-01JNJGDZK4A4MAJSJDM9ZPAXR8)
+(https://www.postman.com/dhanushpandian/workspace/my-workspace/collection/33341630-ac109062-d3c3-46ec-9a48-bfe05108d498?action=share&creator=33341630)
 License
 
 This project is open-sourced and licensed under the MIT License.
