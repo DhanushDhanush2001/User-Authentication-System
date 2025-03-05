@@ -1,11 +1,10 @@
 User Authentication System
 Overview
-A minimal and secure user authentication system built with Node.js, Express.js, and MongoDB. It supports user registration, login, authentication, and protected routes using JWT-based authentication.
+A minimal and secure user authentication system built with Node.js, Express.js, and MongoDB. It supports user registration, login, authentication, and  using JWT-based authentication.
 
 Features
 * User Registration & Login with JWT
 * Password Hashing using bcrypt
-*  Protected Routes (Authorization)
 *  Logout Functionality
 *  MongoDB Integration
 
