@@ -15,7 +15,11 @@ exports.registerUser = catchAsyncError(async (req, res, next) => {
         if (!username || !email || !password || !phone || !gender) {
             return res.status(400).json({ error: "All fields are required." });
         }
-
+        // Check if user already exists
+        const existingUser = await User.findOne({ email });
+        if (existingUser) {
+            return res.status(400).json({ error: "Email is already in use." });
+        }
         const user = await User.create({
             name: username,
             email,
