@@ -27,12 +27,9 @@ const registerValidation = [
         ),
 
     body("gender")
-        .default("")
-         .customSanitizer((value) => (Array.isArray(value) ? value[0] : value))
-        .isString()
-        .withMessage("Gender should be a string")
-        .isIn(["Male", "Female", "Other"])
-        .withMessage("Gender value is invalid"),
+    .optional()
+    .isString().withMessage("Gender should be a string")
+    .isIn(["Male", "Female", "Other"]).withMessage("Gender value is invalid"),
 
     body("phone")
         .withMessage("Phone number is required")
@@ -48,10 +45,9 @@ const registerValidation = [
 const loginValidation = [
     body("email")
         .trim()
-        .notEmpty()
-        .withMessage("Email is required")
-        .isEmail()
-        .withMessage("Invalid email address"),
+        .notEmpty().withMessage("Email is required")
+        .isEmail().withMessage("Invalid email address"),
+
 
     body("password")
         .notEmpty()
